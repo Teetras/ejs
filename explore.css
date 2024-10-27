@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exp-foto {
+  background-image: url("img/big-room.png");
+  height: 88vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.logo{
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  line-height: 75px;
+  font-weight: 600;
+  margin: 2%;
+}
+.int{
+  font-size: 30px;
+  line-height: 75px;
+  font-weight: 600;
+}
+.exp{
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 800;
+}
+.block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20vh;
+  height: 55vh;
+  width: 80%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.room {
+  background-image: url("img/big-room.png");
+}
+.gym {
+  background-image: url('img/gum.png');
+
+}
+.restaurant {
+    background-image: url('img/restaurant.png');
+}
+.about-rooms {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(124, 106, 70, 1) 90%
+  );
+  width: 70%;
+  height: fit-content;
+  padding: 2%;
+  border-radius: 10px;
+  margin-bottom: -12vh;
+  box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.15);
+}

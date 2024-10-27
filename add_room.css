@@ -1,0 +1,66 @@
+.adminPanell{
+   display: flex;
+  width: 98vw;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+}
+.content {
+  display: flex;
+
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  padding: 2%;
+  color: #3d3d3d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  background-color: #ffffff;
+  height: fit-content;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.26);
+}
+.btndel{
+  background: #9c2203e1;
+padding: 1%;
+border: 1px solid #9c2203e1;
+border-radius: 10px;
+color: rgba(255, 255, 255, 0.719);
+}
+.input{
+    /* padding: 1px; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3d3d3d;
+}
+.br{
+    margin-bottom: 12px;
+}
+.addimg::-webkit-file-upload-button {
+    background: #7c6a46c9;
+
+    border: 0;
+    padding: 0.7em 1em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.7em;
+  }
+.addimg::-ms-browse {
+    background: #7c6a46;
+
+    border: 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.2em;
+  }
+  .editObj{
+    padding-bottom:10px ;
+    margin-bottom:10px ;
+background-color: #8e887b0b;
+    border-bottom: 1px solid #96845fb3;
+  }

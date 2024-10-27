@@ -1,0 +1,43 @@
+footer {
+  height: 23vh;
+  width: 100%;
+  background-color: #7c6a46;
+  color: #ffffff;
+}
+.foot-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.foot-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  margin: 2%;
+}
+.one {
+  width: 28%;
+}
+.description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.title {
+  font-family: "Alkatra", cursive;
+  margin-bottom: 12px;
+}
+li {
+  margin-bottom: 4px;
+  list-style-type: none;
+}
+.color {
+  color: #ffffff !important ;
+}
+.puk {
+  padding: 10px 0;
+  border-top: rgba(217, 217, 217, 0.5) solid 1px;
+}

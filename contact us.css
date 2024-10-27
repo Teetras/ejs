@@ -1,0 +1,59 @@
+/* *{
+    margin: 0;
+    padding: 0;
+     
+} */
+.contact {
+  color: #7c6a46;
+}
+
+.logo {
+  font-family: "Mulish", sans-serif;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 800;
+  margin: 2%;
+}
+.logo-com {
+    width: 50%;
+    text-align: center ;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+section{
+    height: 12vh;
+    width: 40%;
+    /* height: 20%; */
+    margin: 2%;
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #000000B2;
+;
+}
+.data{
+    border: 0.5px solid #1C1C1C;
+    height: 50%;
+    
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+/* identical to box height */
+
+text-anchor: middle;
+
+color: rgba(0, 0, 0, 0.5);
+}
+.block-data{
+    padding: 3%;
+}

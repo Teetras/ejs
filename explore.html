@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="explore.css" />
+  </head>
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <div class="nav nav-text">
+      <a class="text" href="homepage.html">Главная</a>
+      <a class="text home" href="explore.html">Отдых</a>
+      <a class="text" href="Rooms.html">Комнаты</a>
+      <a class="text" href="about us.html">О нас</a>
+      <a class="text" href="contact_us.html">Контакты</a>
+    </div>
+    <div class="nav person-icon">
+      <img
+        src="img\person-icon.png"
+        alt="#"
+        class="person-icon"
+        onclick=""
+      />
+      <!-- Окно корзины -->
+      <div id="basketOverlay" class="basket-overlay">
+        <div class="basket-container">
+          <h2 class="nameRoom">Корзина</h2>
+          <!-- Содержимое корзины добавляется динамически -->
+          <!-- Кнопка закрытия -->
+          <div id="basketFromDb"></div>
+          <span class="basket-close" onclick="closeBasket()">X</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="exp-foto">
+      <p class="logo exp">Отдых</p>
+    </div>
+    <p class="logo int">Экскурсия по предлагаемым вариантам отдыха</p>
+
+    <div class="block room">
+      <div class="about-rooms">
+        <div class="info-text">
+          <p class="logo">Раскошные номера</p>
+          <p class="info-text">
+            Элегантные роскошные спальни  демонстрируют
+            индивидуальный интерьер, дизайн и идеи для ваших вдохновений. Просмотрите
+            фотографии и найдите свой идеальный вариант роскошного дизайна
+            спальни.Наши спальни заставят вас никогда не захотеть снова
+            выйти из своей комнаты. С
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="block gym">
+      <div class="about-rooms">
+        <div class="info-text">
+          <p class="logo">Тренажерный зал</p>
+          <p class="info-text">
+            Наш отель предлагает просторный и современный тренажерный зал,
+            идеально подходящий для поддержания физической формы и заботы о
+            здоровье во время вашего пребывания. Наш тренажерный зал оборудован
+            самыми современными тренажерами и устройствами, чтобы удовлетворить
+            все ваши потребности в фитнесе. Будь то кардиотренировки, поднятие
+            тяжестей или функциональные тренировки, вы найдете все необходимое
+            для эффективной тренировки. Наш дружелюбный и профессиональный
+            персонал всегда готов помочь вам и предоставить советы по
+            тренировкам. Посетите наш тренажерный зал, чтобы поддерживать
+            активный образ жизни во время вашего пребывания в нашем отеле.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="block restaurant">
+      <div class="about-rooms">
+        <div class="info-text">
+          <p class="logo">Ресторан</p>
+          <p class="info-text">
+            Наш ресторан - это уютное и стильное место, где вы можете
+            насладиться изысканными блюдами и уникальным гастрономическим
+            опытом. Наш шеф-повар готовит блюда из свежих и высококачественных
+            ингредиентов, чтобы удовлетворить самые изысканные вкусы наших
+            гостей. Мы предлагаем разнообразное меню, включающее блюда
+            международной и местной кухни, чтобы каждый мог найти что-то по
+            своему вкусу. Наша команда внимательных официантов всегда готова
+            обеспечить высокий уровень обслуживания и создать неповторимую
+            атмосферу для вашего приятного обеда или ужина. Приходите и
+            наслаждайтесь вкусом и атмосферой нашего ресторана в отеле - это
+            будет настоящим кулинарным путешествием для ваших вкусовых
+            рецепторов.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="header.js"></script>
+  </body>
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы, а
+          также непосредственная близость ко всем спортивным и административным
+          объектам – идеальное начало знакомства с живописной, спортивной и
+          деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>

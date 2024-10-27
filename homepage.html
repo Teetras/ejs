@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./footer.css" />
+    <title>Homepage</title>
+  </head>
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <div class="nav nav-text">
+      <a class="text home" href="homepage.html">Главная</a>
+      <a class="text" href="explore.html">Отдых</a>
+      <a class="text" href="Rooms.html">Комнаты</a>
+      <a class="text " href="about us.html">О нас</a>
+      <a class="text" href="contact_us.html">Контакты</a>
+      <a id="admin" class="text admin" href="add_room.html">Панель администратора</a>
+
+    </div>
+    <div class="nav person-icon">
+      <img
+        src="img\person-icon.png"
+        alt="#"
+        class="person-icon"
+        onclick=""
+      />
+      <!-- Окно корзины -->
+      <div id="basketOverlay" class="basket-overlay">
+        <div class="basket-container">
+          <h2 class="nameRoom">Корзина</h2>
+         <h2>Здесь пока ничего нет...</h2>
+          <div id="basketFromDb"></div>
+          <span class="basket-close" onclick="closeBasket()">X</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="into">
+      <div class="duo">
+        <div class="paradise-view">
+          <p class="paradise-text">Paradise View</p>
+          <p class="logo">Отель для каждого момента, насыщенного эмоциями</p>
+          <p class="logo-com">
+            Каждое мгновение ощущается как в первый раз в парадайз вью
+          </p>
+          <!-- <div class="button">
+            <button class="book-now btn">      <a class="text sing" href="Rooms.html">Бронировать</a>
+            </button>
+          </div> -->
+        </div>
+        <div class="img-back"><img src="img\Rectangle.png" alt="#" /></div>
+      </div>
+      <div class="sort">
+        <div class="guest-list">
+          <form >
+          <section>
+            <label for="guest-select">
+              <img src="img\Person.png" alt="#" class="icon-sort" />
+              <p class="text-sort">Кол-во гостей:</p>
+            </label>
+            <select class="inp-sort" id="choice" name="choice" required>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <!-- <option value="5">05</option> -->
+            </select>
+          </section>
+        </div>
+
+        <div class="date">
+          <div class="chek-date">
+            <section>
+              <label for="check-date">
+                <img src="img\Date.png" alt="#" class="icon-sort" />
+                <p class="text-sort">Дата заезда:</p>
+              </label>
+              <input class="inp-sort" type="date" id="check-in-date" name="check-date"required />
+            </section>
+          </div>
+
+          <div class="chek-date">
+            <section>
+              <label for="check-date">
+                <img src="img\Date.png" alt="#" class="icon-sort" />
+                <p class="text-sort">Дата выезда:</p>
+              </label>
+              <input class="inp-sort" type="date" id="check-out-date" name="check-date" />
+              <!-- id="check-out-date"   id="check-in-date"-->
+            </section>
+          
+          </div>
+        </div></form>
+        <div class="nav"><button class="book-now" onclick=" dateINHome()">Поиск</button></div>
+      </div>
+    </div>
+    <div class="facilities">
+      <div class="header-facil">
+        <div class="logo fac">Наши услуги</div>
+        <div class="logo-com fac">
+          Мы предлагаем современные (5-звездочные) гостиничные удобства для вашего комфорта.
+        </div>
+      </div>
+      <div class="body-facil">
+        <div class="four-block"></div>
+        <div class="fac-block">
+          <img src="img\makiSwimming0.png" alt="" />
+          <p class="text">Бассейн</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (2).png" alt="" />
+          <p class="text">Wifi</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (3).png" alt="" />
+          <p class="text">Завтрак</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (4).png" alt="" />
+          <p class="text">Тренажерный зал</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (5).png" alt="" />
+          <p class="text">Игровая зона</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (6).png" alt="" />
+          <p class="text">24/7 Свет</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (7).png" alt="" />
+          <p class="text">Прачечная</p>
+        </div>
+        <div class="fac-block">
+          <img src="img\Vector (8).png" alt="" />
+          <p class="text">Парковочное место</p>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="rooms.js"></script> -->
+    <script src="room.js"></script>
+    <script src="home.js"></script>
+    <script src="header.js"></script>
+
+    
+
+    
+
+  </body>
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы,
+           а также непосредственная близость ко всем спортивным и административным объектам 
+           – идеальное начало знакомства с живописной, спортивной и деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>

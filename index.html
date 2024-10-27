@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="sing_in.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <title>Allowance</title>
+  </head>
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <a id="admin"></a>
+  
+    <!-- <div class="nav button"><button class="book-now">Book now</button></div> -->
+  </header>
+
+  <body>
+    <div class="container-login">
+      <div class="form">
+        <form>
+          <div class="content">
+            <h1>Авторизация</h1>
+            <div class="values">
+              <!-- <input type="text" required placeholder="NAME" /> -->
+              <input
+                class="dataUser"
+                type="email"
+                required
+                placeholder="EMAIL"
+              />
+              <input
+                class="dataUser"
+                type="password"
+                required
+                placeholder="ПАРОЛЬ"
+              />
+            </div>
+            <!-- <a href="#">FORGOT YOUR PASSWORD</a> -->
+          </div>
+          <div class="footer">
+            <input
+              type="button"
+              value="РЕГИСТРАЦИЯ"
+              class="register"
+              onclick="add_user()"
+            />
+            <input type="button" value="ВХОД" class="sing-in" onclick="enter_user()" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="sing_in.js"></script>
+  </body>
+
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы, а
+          также непосредственная близость ко всем спортивным и административным
+          объектам – идеальное начало знакомства с живописной, спортивной и
+          деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>
+<!-- <button class="btn" onclick="add_user()">REGISTER</button>
+          <button class="btn" onclick="">SING IN</button> -->

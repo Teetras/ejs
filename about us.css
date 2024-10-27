@@ -1,0 +1,68 @@
+.logo {
+  font-family: "Mulish", sans-serif;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 800;
+  margin: 2%;
+}
+.logo-com {
+  width: 50%;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+.staff {
+  display: flex;
+  height: 100vh;
+}
+.manager {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.foto-manager {
+  width: fit-content;
+  -webkit-box-shadow: 34px -32px 0px 14px rgba(124, 106, 70, 1);
+  -moz-box-shadow: 34px -32px 0px 14px rgba(124, 106, 70, 1);
+  box-shadow: 34px -32px 0px 14px rgba(124, 106, 70, 1);
+}
+.nameManag {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+.clients{
+height: 28vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.client{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px; 
+
+}
+.logo-client{
+    height: 17vh;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.one-logo{
+    margin: 0 4%;
+}

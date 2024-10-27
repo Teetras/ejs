@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Room</title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="add_room.css" />
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <div class="nav nav-text">
+      <a class="text " href="homepage.html">Главная</a>
+      <a class="text" href="explore.html">Отдых</a>
+      <a class="text" href="Rooms.html">Комнаты</a>
+      <a class="text " href="about us.html">О нас</a>
+      <a class="text" href="contact_us.html">Контакты</a>
+    </div>
+    <div class="nav person-icon">
+      <img
+        src="img\person-icon.png"
+        alt="#"
+        class="person-icon"
+        onclick=""
+      />
+      <!-- Окно корзины -->
+      <div id="basketOverlay" class="basket-overlay">
+        <div class="basket-container">
+          <h2 class="nameRoom">Корзина</h2>
+          <!-- Содержимое корзины добавляется динамически -->
+          <!-- Кнопка закрытия -->
+          <div id="basketFromDb"></div>
+          <span class="basket-close" onclick="closeBasket()">X</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="adminPanell">
+    <div class="content">
+      <div class="form">
+        <div class="editObj">
+          <label for="roomType">Добавление комнаты комнаты</label>
+        
+         </div>
+        <div class="br">
+          <label for="roomName">Название Комнаты:</label>
+          <input type="text" id="name_room" name="roomName" class="input" />
+        </div>
+        <div class="br">
+          <label for="roomType">Тип комнаты:</label>
+          <select id="roomType" name="roomType">
+            <option value="На одного">На одного</option>
+            <option value="На двоих">На двоих</option>
+            <option value="На троих с двумя раздельными кроватями">На троих с двумя раздельными кроватями</option>
+            <option value="На троих с тремя раздельными кроватями">На троих с тремя раздельными кроватями</option>
+            <option value="На четверых с четырьмя раздельными кроватями">На четверых с четырьмя  кроватями</option>
+          </select><br />
+        </div>
+        <div class="br">
+          <section>
+            <label for="guest-select">
+              <p class="text-sort">Количество гостей:</p>
+            </label>
+            <select class="inp-sort" id="guest" name="choice" required>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+            </select>
+          </section>
+        </div>
+        <div class="br">
+          <label for="roomPrice">Стоимость за ночь в $:</label>
+          <input
+            class="input"
+            type="text"
+            id="roomPrice"
+            name="roomPrice"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 58 || event.charCode ===45"
+          />
+        </div>
+        <div class="br">
+          <label for="roomImage">Фотография комнаты:</label>
+          <input class="addimg" type="file" id="roomImageUpload" name="roomImageUpload" placeholder="Upload File"/>
+        </div>
+
+        <div class="br"><div class="br">
+          <label for="roomAmenities">Доп. удобства:</label>
+          <br /></div>
+
+          <input
+            type="checkbox"
+            id="roomAmenitiesInternet"
+            name="roomAmenities[]"
+          />
+          <label for="roomAmenitiesInternet">Wi-Fi</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="roomAmenitiesBreakfast"
+            name="roomAmenities[]"
+          />
+          <label for="roomAmenitiesBreakfast">Завтрак</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="roomAmenitiesHairDryer"
+            name="roomAmenities[]"
+          />
+          <label for="roomAmenitiesHairDryer">Фен</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="roomAmenitiesKettle"
+            name="roomAmenities[]"
+          />
+          <label for="roomAmenitiesKettle">Чайник</label>
+        </div>
+        <!-- <a href="/add_room.html/add" class="button">Add new Room</a> -->
+
+        <button class="button book-now" onclick="download()">Добавить комнату</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="form">
+        <div class="editObj">
+          <label for="roomType">Удаление комнаты комнаты</label>
+        
+         </div>
+       <label for="roomType">Название комнаты:</label>
+      <select id="roomTypet" name="roomType">
+                <!-- Опции будут добавлены динамически -->
+      </select>
+      <button class="button btndel" onclick="deleteRoom()">Удалить</button>
+
+      </div>
+      </div>
+      <div class="content">
+        <div class="form">
+          <div class="editObj">
+         <label for="roomType">Название изменяемой комнаты:</label>
+        <select id="roomedit" name="roomType">
+                  <!-- Опции будут добавлены динамически -->
+        </select>
+        </div>
+          <div class="br">
+            <label for="roomName">Название Комнаты:</label>
+            <input type="text" id="name_room1" name="roomName" class="input" />
+          </div>
+          <div class="br">
+            <label for="roomType">Тип комнаты:</label>
+            <select id="roomType1" name="roomType">
+              <option value=""></option>
+
+              <option value="На одного">На одного</option>
+              <option value="На двоих">На двоих</option>
+              <option value="На троих с двумя раздельными кроватями">На троих с двумя раздельными кроватями</option>
+              <option value="На троих с тремя раздельными кроватями">На троих с тремя раздельными кроватями</option>
+              <option value="На четверых с четырьмя раздельными кроватями">На четверых с четырьмя  кроватями</option>
+            </select><br />
+          </div>
+          <div class="br">
+            <section>
+              <label for="guest-select">
+                <p class="text-sort">Количество гостей:</p>
+              </label>
+              <select class="inp-sort" id="guest1" name="choice" required>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+              </select>
+            </section>
+          </div>
+          <div class="br">
+            <label for="roomPrice">Стоимость за ночь в $:</label>
+            <input
+              class="input"
+              type="text"
+              id="roomPrice1"
+              name="roomPrice"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 58 || event.charCode ===45"
+            />
+          </div>
+          <!-- <div class="br">
+            <label for="roomImage">Фотография комнаты:</label>
+            <input class="addimg" type="file" id="roomImageUpload" name="roomImageUpload" placeholder="Upload File"/>
+          </div> -->
+  
+          <!-- <div class="br"><div class="br">
+            <label for="roomAmenities">Доп. удобства:</label>
+            <br /></div>
+  
+            <input
+              type="checkbox"
+              id="roomAmenitiesInternet"
+              name="roomAmenities[]"
+            />
+            <label for="roomAmenitiesInternet">Wi-Fi</label>
+            <br />
+  
+            <input
+              type="checkbox"
+              id="roomAmenitiesBreakfast"
+              name="roomAmenities[]"
+            />
+            <label for="roomAmenitiesBreakfast">Завтрак</label>
+            <br />
+  
+            <input
+              type="checkbox"
+              id="roomAmenitiesHairDryer"
+              name="roomAmenities[]"
+            />
+            <label for="roomAmenitiesHairDryer">Фен</label>
+            <br />
+  
+            <input
+              type="checkbox"
+              id="roomAmenitiesKettle"
+              name="roomAmenities[]"
+            />
+            <label for="roomAmenitiesKettle">Чайник</label>
+          </div>
+           -->
+  
+          
+        
+        <button class="button btndel" onclick="Edit()">Изменить</button>
+  
+        </div>
+        </div>
+    </div>
+    </div>
+  
+      
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы, а
+          также непосредственная близость ко всем спортивным и административным
+          объектам – идеальное начало знакомства с живописной, спортивной и
+          деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>

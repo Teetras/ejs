@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="contact us.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact Us</title>
+  </head>
+
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <div class="nav nav-text">
+      <a class="text" href="homepage.html">Главная</a>
+      <a class="text" href="explore.html">Отдых</a>
+      <a class="text" href="Rooms.html">Комнаты</a>
+      <a class="text" href="about us.html">О нас</a>
+      <a class="text home" href="contact_us.html">Контакты</a>
+    </div>
+    <div class="nav person-icon">
+      <img
+        src="img\person-icon.png"
+        alt="#"
+        class="person-icon"
+        onclick=""
+      />
+      <!-- Окно корзины -->
+      <div id="basketOverlay" class="basket-overlay">
+        <div class="basket-container">
+          <h2 class="nameRoom">Корзина</h2>
+          <!-- Содержимое корзины добавляется динамически -->
+          <!-- Кнопка закрытия -->
+          <div id="basketFromDb"></div>
+          <span class="basket-close" onclick="closeBasket()">X</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="bed">
+      <p class="logo">Контакты</p>
+      <p class="logo-com">
+       Тут с контактами вы найдете все необходимые данные, чтобы
+        связаться с нами и получить дополнительную информацию о нашем отеле.Мы
+        предоставляем контактные номера телефонов, на которые вы можете
+        позвонить, чтобы задать вопросы или сделать бронирование.
+      </p>
+    </div>
+    <div class="contacts">
+      <div class="row">
+        <section>
+          <label for="data">ФИО</label>
+          <div class="data" name="data">
+            <p class="block-data">Прохоренко Татьяна</p>
+          </div>
+        </section>
+        <section>
+          <label for="data">Email</label>
+          <div class="data" name="data">
+            <p class="block-data">t4.prokhorenko.2017@gmail.com</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section>
+          <label for="data">Номер</label>
+          <div class="data" name="data">
+            <p class="block-data">+375(29)195-47-74  (А1) </p>
+          </div>
+        </section>
+        <section>
+          <label for="data">Телеграмм</label>
+          <div class="data" name="data">
+            <p class="block-data">https://t.me/Yuzuriiha</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="header.js"></script>
+  </body>
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы,
+           а также непосредственная близость ко всем спортивным и административным объектам 
+           – идеальное начало знакомства с живописной, спортивной и деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>

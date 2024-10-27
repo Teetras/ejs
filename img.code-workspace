@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "../саипис/курсач/img"
+		},
+		{
+			"name": "ejs",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ejs",
+		"liveServer.settings.port": 5502
+	}
+}

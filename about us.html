@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="about us.css" />
+    <title>About Us</title>
+  </head>
+  <header>
+    <div class="nav icon"><img src="img\logo.png" alt="#" /></div>
+    <div class="nav nav-text">
+      <a class="text" href="homepage.html">Главная</a>
+      <a class="text" href="explore.html">Отдых</a>
+      <a class="text" href="Rooms.html">Комнаты</a>
+      <a class="text home" href="about us.html">О нас</a>
+      <a class="text" href="contact_us.html">Контакты</a>
+    </div>
+    <div class="nav person-icon">
+      <img
+        src="img\person-icon.png"
+        alt="#"
+        class="person-icon"
+        onclick=""
+      />
+      <!-- Окно корзины -->
+      <div id="basketOverlay" class="basket-overlay">
+        <div class="basket-container">
+          <h2 class="nameRoom">Корзина</h2>
+          <!-- Содержимое корзины добавляется динамически -->
+          <!-- Кнопка закрытия -->
+          <div id="basketFromDb"></div>
+          <span class="basket-close" onclick="closeBasket()">X</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="bed">
+      <p class="logo">О Нас</p>
+      <p class="logo-com">
+        Вы сможете познакомиться с нашими партнерами и узнать о взаимовыгодных
+        отношениях, которые мы развиваем внутри отеля бизнес.Вот основная
+        информация о нашей команде и руководстве. Вы сможете ознакомиться с
+        профилями наших общих менеджеров и узнайте больше об их опыте и
+        экспертных знаниях в гостиничной индустрии.
+      </p>
+    </div>
+
+    <div class="staff">
+      <div class="manager">
+        <div class="foto-manager">
+          <img src="img\Manager.png" alt="Manager" />
+        </div>
+        <p class="nameManag">Самира Венс (Менеджер)</p>
+      </div>
+      <div class="manager">
+        Paradise View – это команда искренних фанатов своего дела, влюбленных в
+        сферу гостеприимства, в дух и атмосферу Октябрьской улицы. Это отель про
+        трудолюбивых, свободных и увлечённых людей, создающих уникальный продукт
+        и окружающих теплом и заботой своих гостей. Отель предлагает
+        разнообразие высококачественных услуг, которые приятно удивят и порадуют
+        даже самых требовательных гостей..<br /><br />
+        Все номера в гостинице оборудованы современной мебелью, системой
+        климат-контроля, датчиками пожаротушения и дымодетекторами, электронными
+        замками, телефоном и спутниковым телевидением, на всех
+        этажах ведется круглосуточное видеонаблюдение. К услугам гостей
+        круглосуточная стойка регистрации, бесплатная открытая парковка и крытый
+        паркинг, камера хранения багажа, сейф на ресепшн. Из панорамных окон
+        комфортабельных номеров открывается вид на оживленный город..<br /><br />
+
+        Наши гости и партнеры – успешные и свободные люди, которые находятся в
+        непрерывном движении и поиске нового, лучшего, важного. Они умеют
+        ставить перед собой цели и достигать их. Наши гости умеют планировать,
+        берегут своё время и знают, что такое качественный отдых. Вместе с
+        нашими гостями мы с радостью встречаем каждый новый день, наполняем его
+        заботой и комфортом. Мы чувствуем будущее, мы гибкие и открытые, мы
+        знаем, что действительно нужно человеку для продуктивной работы и
+        качественного отдыха. <br /><br />
+
+      </div>
+    </div>
+    <div class="clients">
+      <div class="client">Партнеры</div>
+      <div class="logo-client">
+        <img src="img\image 6.png" alt="" class="one-logo" />
+        <img src="img\image 5.png" alt="" class="one-logo" />
+        <img src="img\image 4.png" alt="" class="one-logo" />
+        <img src="img\image 7.png" alt="" class="one-logo" />
+        <img src="img\image 8.png" alt="" class="one-logo" />
+      </div>
+    </div>
+    <script src="header.js"></script>
+  </body>
+  <footer>
+    <div class="foot-body">
+      <div class="foot-block one">
+        <div class="description">
+          <div class="title">Paradise view</div>
+
+          Элитарное месторасположение на одном из главных проспектов столицы, а
+          также непосредственная близость ко всем спортивным и административным
+          объектам – идеальное начало знакомства с живописной, спортивной и
+          деловой столицей.
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Отделы на странице</div>
+
+          <ul>
+            <li>Номера</li>
+            <li><a class="color" href="#">О нас</a></li>
+            <li><a class="color" href="#">Контакты</a></li>
+            <li>Отдых</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Компания</div>
+
+          <ul>
+            <li>Политика конфедециальности</li>
+            <li>Политика возврата денежных средств</li>
+            <li>Ч.З.В</li>
+            <!-- <li><a class="color" href="#">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-block">
+        <div class="description">
+          <div class="title">Социальные сети</div>
+
+          <ul>
+            <li><a class="color" href="#">Facebook</a></li>
+            <li><a class="color" href="#">Twitter</a></li>
+            <li><a class="color" href="#">Instagram</a></li>
+            <li><a class="color" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-body text puk">Райский вид 2023</div>
+  </footer>
+</html>
